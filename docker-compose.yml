@@ -16,6 +16,8 @@ services:
         build:
             context: .
             dockerfile: dockerfile
+        hostname: my-first-go-rest-api
+        container_name: my-first-go-rest-api
         depends_on:
             - postgres
         ports:
